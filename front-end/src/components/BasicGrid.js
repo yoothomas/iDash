@@ -65,6 +65,7 @@ class BasicGrid extends React.Component {
                         {articles.length > 0 && <ArticleList articles={articles.slice(0, DEFAULT_ARTICLE_NUM)} />}
                         {newsAPIError && <p>Could not fetch any articles. Please try again.</p>}
                     </Item>
+                    {/*add button to "load more"*/}
                   
                   {/*<BasicList /> */}
                 </Grid>

@@ -4,7 +4,7 @@ import { Container, List, Header, Grid, Image } from "semantic-ui-react";
 const ArticleItem = (props) => {
     const { article } = props;
     return (
-      <List.Item style={{ padding: 30 }}>
+      <List.Item style={{ padding: 10 }}>
         <Grid>
           <Grid.Column
             width={11}
@@ -14,9 +14,9 @@ const ArticleItem = (props) => {
               justifyContent: "flex-start",
             }}
           >
-            <Header as="h3" style = {{ margin: "20px 0", textAlign: "left", justifyContent: "left" }}>
+            <Header as="h3" style = {{ margin: "10px 0", textAlign: "left", justifyContent: "left" }}>
                 <a href={article.url}>{article.title}</a></Header>
-            <List.Description style={{ margin: "20px 0", textAlign: "left", justifyContent: "left" }}>
+            <List.Description style={{ margin: "10px 0", textAlign: "left", justifyContent: "left" }}>
               {article.description}
             </List.Description>
             <List bulleted horizontal>
@@ -26,7 +26,7 @@ const ArticleItem = (props) => {
               <List.Item>{article.publishedAt.split("T")[0]}</List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column width={5}>
+          <Grid.Column width={5} style = {{ padding: 20}}>
             <Image src={article.urlToImage} />
           </Grid.Column>
         </Grid>

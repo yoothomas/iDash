@@ -10,7 +10,7 @@
     margin-top: 40px;
     margin-bottom: 30px;
     max-width: 560px;
-    
+    background-color: white;
   }
   
   .search__input > input {
@@ -18,7 +18,7 @@
     /* padding: 10px 20px; */
     font-size: medium;
     border: none;
-    background-color: floralwhite;
+    background-color: white;
   }
   
   .search__input > input:focus {

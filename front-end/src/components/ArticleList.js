@@ -14,8 +14,9 @@ const ArticleItem = (props) => {
               justifyContent: "flex-start",
             }}
           >
-            <Header as="h3">{article.title}</Header>
-            <List.Description style={{ margin: "20px 0", textAlign: "center" }}>
+            <Header as="h3" style = {{ margin: "20px 0", textAlign: "left", justifyContent: "left" }}>
+                <a href={article.url}>{article.title}</a></Header>
+            <List.Description style={{ margin: "20px 0", textAlign: "left", justifyContent: "left" }}>
               {article.description}
             </List.Description>
             <List bulleted horizontal>

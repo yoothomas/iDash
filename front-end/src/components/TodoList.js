@@ -85,7 +85,7 @@ function FormTodo({ addTodo }) {
   return (
     <Form onSubmit={handleSubmit}> 
     <Form.Group>
-      <Form.Label><b>Add Todo</b></Form.Label>
+      {/* <Form.Label><b>Add Todo</b></Form.Label> */}
       <Form.Control type="text" className="input" value={value} onChange={e => setValue(e.target.value)} placeholder="Add new todo" />
     </Form.Group>
     <Button variant="primary mb-3" type="submit">
@@ -98,7 +98,7 @@ function FormTodo({ addTodo }) {
 function TodoList() {
   const [todos, setTodos] = React.useState([
     {
-      text: "This is a sampe todo",
+      text: "Sample todo",
       isDone: false
     }
   ]);
@@ -123,7 +123,7 @@ function TodoList() {
   return (
     <div className="todolist">
       <div className="container">
-        <h1 className="text-center mb-4">Todo List</h1>
+        {/* <h1 className="text-center mb-4">Todo List</h1> */}
         <FormTodo addTodo={addTodo} />
         <div>
           {todos.map((todo, index) => (

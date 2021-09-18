@@ -6,8 +6,9 @@ import Grid from '@mui/material/Grid';
 import BasicList from './BasicList.js';
 
 /* Pull sizing from user config*/
-let emailWidth = 8;
-let noteWidth = 4;
+let emailWidth = 10;
+let noteWidth = 10;
+let calendarWidth = 10;
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -19,17 +20,20 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicGrid() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid item xs = "auto">
-          <Item>xs</Item>
+      <Grid container spacing={3} justifyContent="center" alignTems="center" direction="row">
+        
+        <Grid item emails = {emailWidth}>
+            <Item><BasicList /></Item>
         </Grid>
-        <Grid item xs = {emailWidth}>
-          <Item>Email:</Item>
+
+        <Grid item notes = {noteWidth}>
+            <Item>Notes:</Item>
         </Grid>
-        <Grid item xs={noteWidth}>
-          <Item>Notes:</Item>
+
+        <Grid item calendar = {calendarWidth}>
+            <Item>Calendar</Item>
         </Grid>
-        <BasicList />
+        
       </Grid>
     </Box>
   );

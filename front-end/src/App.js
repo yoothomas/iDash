@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Search from './components/Search.js';
 import './App.css';
 import BasicGrid from './components/BasicGrid';

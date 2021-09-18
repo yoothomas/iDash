@@ -21,15 +21,13 @@ function Search() {
 
   return (
     <form className="search" onSubmit={search}>
-      <div className="search__input">
+      <div className="search__input" >
         <IconButton type="submit" variant="contained" className="search__inputIcon" onClick={search}>
             <SearchButton></SearchButton>
         </IconButton>
         <input type="search" id="query" placeholder="Search Google" 
             value={input} onChange={(e) => {setInput(e.target.value);}} />
-        <IconButton>
-        <MicIcon />
-        </IconButton>
+        {/*<IconButton><MicIcon /></IconButton>*/}
         {/* need to make the search icon button smaller*/}
         {/* need to add Google's autocomplete*/}
         {/* need to add voice search feature*/}

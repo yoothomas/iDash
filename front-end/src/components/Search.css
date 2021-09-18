@@ -8,14 +8,17 @@
     width: 75vw;
     margin: 0 auto;
     margin-top: 40px;
+    margin-bottom: 30px;
     max-width: 560px;
+    
   }
   
   .search__input > input {
     flex: 1;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     font-size: medium;
     border: none;
+    background-color: floralwhite;
   }
   
   .search__input > input:focus {

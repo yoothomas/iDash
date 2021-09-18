@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "react-scripts start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/yoothomas/HTN2021/issues"
   },
-  "homepage": "https://github.com/yoothomas/HTN2021#readme"
+  "homepage": "https://github.com/yoothomas/HTN2021#readme",
+  "dependencies": {
+    "react-scripts": "^4.0.3"
+  }
 }

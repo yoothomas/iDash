@@ -69,8 +69,8 @@ class BasicGrid extends React.Component {
                 <Draggable>
                 <Grid item xs = {newsWidth}>
                     <Item>
-                    <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
-                        Top Headlines
+                        <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
+                            Top Headlines
                         </Header>
                         {articles.length > 0 && <ArticleList articles={articles.slice(0, DEFAULT_ARTICLE_NUM)} />}
                         {newsAPIError && <p>Could not fetch any articles. Please try again.</p>}

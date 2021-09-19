@@ -34,6 +34,7 @@ function App () {
     return (
         <div className="App">
             <h1 className="text-center mb-4">Welcome :)</h1>
+            <SignOut />
             <Search />
             <section>
                 {user ? <BasicGrid /> : <SignIn />}

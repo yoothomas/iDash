@@ -2,7 +2,7 @@
 
 Created for **Hack the North 2021**
 
-iDash allows users to access important information by conveniently sotring it all in once place.
+iDash allows users to access important information by conveniently sorting it all in once place.
 Allows users to make their own todo list for the day, conveniently look at their calendar, make google searches and even check out the news. These features are also all DRAGGABLE. View images/video to learn more.
 
 Our web app uses a React front-end using the Material-UI library and Node-js. Our backend and authentication service is handled using Google Firebase.
@@ -11,7 +11,7 @@ Our web app uses a React front-end using the Material-UI library and Node-js. Ou
 
 This project requires [node](https://nodejs.org/) and [firebase](https://firebase.google.com/)
 
-After cloning our repo, cd into our front-end folder and update npm
+After cloning our repo, cd into our front-end folder and update the node packages
 
 ```bash
 cd front-end

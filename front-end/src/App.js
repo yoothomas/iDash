@@ -1,5 +1,7 @@
 import Search from './components/Search.js';
 import './App.css';
+
+
 import BasicGrid from './components/BasicGrid';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -36,7 +38,6 @@ function App () {
             <section>
                 {user ? <BasicGrid /> : <SignIn />}
             </section>
-            <BasicGrid />
         </div>
     );
 }

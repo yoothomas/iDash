@@ -24,9 +24,11 @@ const analytics = getAnalytics(app);
 
 //Initialize Authorization
 const auth = getAuth();
-const [user] = useAuthState(auth);
 
 function App () {
+
+    const [user] = useAuthState(auth);
+
     return (
         <div className="App">
             <h1 className="text-center mb-4">Welcome :)</h1>
@@ -37,6 +39,43 @@ function App () {
             <BasicGrid />
         </div>
     );
+}
+
+function SignIn() {
+
+  const signInWithGoogle = () => {
+      signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        // ...
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });;
+  }
+
+  return (
+    <>
+      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
+    </>
+  )
+
+}
+
+function SignOut() {
+return auth.currentUser && (
+  <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+)
 }
 
 export default App;

@@ -8,13 +8,13 @@ This project requires [node](https://nodejs.org/) and [firebase](https://firebas
 
 After cloning our repo, cd into our front-end folder and update npm
 
-'''bash
+```bash
 cd front-end
 npm install
-'''
+```
 
 After the required packages are installed, run our app using npm start
 
-'''bash
+```bash
 npm start
-'''
+```

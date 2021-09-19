@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/yoothomas/HTN2021#readme",
   "dependencies": {
-    "firebase": "^9.0.2",
     "react-scripts": "^4.0.3"
   }
 }

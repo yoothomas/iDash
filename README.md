@@ -1,6 +1,6 @@
 # iDash
 
-Created for **Hack the North 2021**        :grapes: :sunglasses: :man_shrugging: :dolphin:
+Created for **Hack the North 2021**
 
 iDash allows users to access important information by conveniently sorting it all in once place.
 Allows users to make their own todo list for the day, conveniently look at their calendar, make google searches and even check out the news. These features are also all DRAGGABLE. View images/video to learn more.
@@ -28,3 +28,4 @@ npm start
 
 Feel free to contact us at [htn2021arts@gmail.com](mailto:htn2021arts@gmail.com)
 
+:grapes: :sunglasses: :man_shrugging: :dolphin:

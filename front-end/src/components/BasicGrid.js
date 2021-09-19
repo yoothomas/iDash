@@ -8,7 +8,8 @@ import TodoList from './TodoList.js';
 import { getHeadlines } from './News.js';
 import { Container, Header } from "semantic-ui-react";
 import ArticleList from './ArticleList.js';
-import { DEFAULT_ARTICLE_NUM } from '../config.js'
+import { DEFAULT_ARTICLE_NUM } from '../config.js';
+import WeatherDisplay from './WeatherDisplay.js'
 
 /* Pull sizing from user config*/
 let noteWidth = 3;
@@ -49,13 +50,19 @@ class BasicGrid extends React.Component {
                     </Header>
                   </Item>
                   <TodoList />
+                  <Item>
+                    <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
+                      Weather
+                    </Header>
+                  </Item>
+                  <WeatherDisplay />
                 </Grid>
                 <Grid item xs = {emailWidth}>
                   <Item>
                   <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                     Email
                     </Header>
-                      </Item>
+                  </Item>
                 </Grid>
                 <Grid item xs = {newsWidth}>
                     <Item>

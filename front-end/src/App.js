@@ -8,7 +8,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <h1 className="text-center mb-4">Welcome :)</h1>
+                <h1 className="welcome">Welcome to iDash</h1>
                 <Search />
                 <BasicGrid />
             </div>

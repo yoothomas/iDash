@@ -1,7 +1,6 @@
 import Search from './components/Search.js';
 import './App.css';
 
-
 import BasicGrid from './components/BasicGrid';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -33,7 +32,8 @@ function App () {
 
     return (
         <div className="App">
-            <h1 className="text-center mb-4">Welcome :)</h1>
+ 
+            <h1 className="welcome">Welcome to iDash</h1>
             <SignOut />
             <Search />
             <section>

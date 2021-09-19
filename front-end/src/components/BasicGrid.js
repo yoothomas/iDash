@@ -8,6 +8,8 @@ import TodoList from './TodoList.js';
 import { getHeadlines, NewsWidget } from './News.js';
 import { Container, Header } from "semantic-ui-react";
 import ArticleList from './ArticleList.js';
+
+import WeatherDisplay from './WeatherDisplay.js'
 import { DEFAULT_ARTICLE_NUM } from '../config.js'
 import Draggable, {DraggableCore} from 'react-draggable'; // Both at the same time
 import CalendarWidget from './Calendar.js';
@@ -50,9 +52,15 @@ class BasicGrid extends React.Component {
                   <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                     Todo List
                     </Header>
-                    <TodoList />
                   </Item>
-                  
+                  <TodoList />
+                  <Item>
+                    <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
+                      Weather
+                    </Header>
+                  </Item>
+                  <WeatherDisplay />
+
                 </Grid>
                 </Draggable>
                 <Draggable>
@@ -62,7 +70,7 @@ class BasicGrid extends React.Component {
                     Calendar
                     </Header>
                     <CalendarWidget />
-                      </Item>
+                   </Item>
                 </Grid>
                 </Draggable>
                 

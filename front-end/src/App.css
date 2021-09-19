@@ -41,3 +41,10 @@
     transform: rotate(360deg);
   }
 }
+
+.welcome {
+  color: black;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(87, 87, 88, 0.37);
+  
+}

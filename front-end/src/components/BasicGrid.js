@@ -5,6 +5,7 @@ import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import BasicList from './BasicList.js';
 import TodoList from './TodoList.js';
+import Bookmarks from './Bookmarks.js';
 import { getHeadlines, NewsWidget } from './News.js';
 import { Container, Header } from "semantic-ui-react";
 import ArticleList from './ArticleList.js';
@@ -48,19 +49,28 @@ class BasicGrid extends React.Component {
               <Grid container spacing={5}>
                 <Draggable>
                 <Grid item xs = {noteWidth}>
+                <Item>
+                  <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
+                    Useful Links
+                    </Header>
+                    <Bookmarks />
+                  </Item>
+                  
                   <Item>
                   <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                     Todo List
                     </Header>
+                    <TodoList />
                   </Item>
-                  <TodoList />
+                  
                   <Item>
                     <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                       Weather
                     </Header>
+                    <WeatherDisplay />
                   </Item>
-                  <WeatherDisplay />
-
+                  
+                  
                 </Grid>
                 </Draggable>
                 <Draggable>
@@ -74,7 +84,7 @@ class BasicGrid extends React.Component {
                 </Grid>
                 </Draggable>
                 
-                <Draggable>
+                <Draggable> 
                 <Grid item xs = {newsWidth}>
                     <Item>
                         <Header as="h3" style={{ textAlign: "center", padding: 0 }}>

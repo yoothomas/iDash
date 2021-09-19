@@ -9,6 +9,7 @@ import 'firebase/analytics';
 
 import Search from './components/Search.js';
 import BasicGrid from './components/BasicGrid';
+import React from 'react';
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -36,20 +37,22 @@ const analytics = getAnalytics(app);
 const auth = getAuth();
 
 
-function App() {
 
+class App extends React.Component {
 
     const [user] = useAuthState(auth);
-
-
-    return (
-        <div className="App">
-            <Search />
-            <section>
-                {user ? <BasicGrid /> : <SignIn />}
-            </section>
-        </div>
-  );
+  
+    render() {
+        return (
+            <div className="App">
+                <h1 className="text-center mb-4">Welcome :)</h1>
+                <Search />
+                <section>
+                    {user ? <BasicGrid /> : <SignIn />}
+                </section>
+            </div>
+      );
+    } 
 }
 
 function SignIn() {

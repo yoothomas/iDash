@@ -10,7 +10,7 @@ import { Container, Header } from "semantic-ui-react";
 import ArticleList from './ArticleList.js';
 import { DEFAULT_ARTICLE_NUM } from '../config.js'
 import Draggable, {DraggableCore} from 'react-draggable'; // Both at the same time
-import {CalendarHTML} from './Calendar.js';
+import CalendarWidget from './Calendar.js';
 
 /* Pull sizing from user config*/
 let noteWidth = 3;
@@ -61,7 +61,7 @@ class BasicGrid extends React.Component {
                   <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                     Calendar
                     </Header>
-                    <CalendarHTML />
+                    <CalendarWidget />
                       </Item>
                 </Grid>
                 </Draggable>

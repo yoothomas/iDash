@@ -4,6 +4,7 @@ import SearchButton from "@material-ui/icons/Search";
 // import MicIcon from "@material-ui/icons/Mic";
 // import {useHistory} from "react-router-dom";
 import { IconButton } from "@material-ui/core";
+import Draggable, {DraggableCore} from 'react-draggable'; // Both at the same time
 
 function Search() {
   const [input, setInput] = useState("");
@@ -20,6 +21,7 @@ function Search() {
   };
 
   return (
+      <Draggable>
     <form className="search" onSubmit={search}>
       <div className="search__input" >
         <IconButton type="submit" variant="contained" className="search__inputIcon" onClick={search}>
@@ -33,6 +35,7 @@ function Search() {
         {/* need to add voice search feature*/}
       </div>
     </form>
+    </Draggable>
   );
 }
 

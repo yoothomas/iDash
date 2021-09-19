@@ -28,4 +28,4 @@ npm start
 
 Feel free to contact us at [htn2021arts@gmail.com](mailto:htn2021arts@gmail.com)
 
-:grapes: :sunglasses: :man_shrugging: :dolphin:
+:grapes: :frog: :pensive: :dolphin:

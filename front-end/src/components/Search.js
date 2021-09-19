@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Search.css";
 import SearchButton from "@material-ui/icons/Search";
-import MicIcon from "@material-ui/icons/Mic";
+// import MicIcon from "@material-ui/icons/Mic";
 // import {useHistory} from "react-router-dom";
 import { IconButton } from "@material-ui/core";
 

@@ -47,57 +47,78 @@ class BasicGrid extends React.Component {
         return (
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={5}>
-                <Draggable>
                 <Grid item xs = {noteWidth}>
+                <Draggable>
                 <Item>
+                    
                   <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                     Useful Links
                     </Header>
                     <Bookmarks />
+                    
                   </Item>
-                  
+                  </Draggable>
+                  <Draggable>
                   <Item>
+                      
                   <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                     Todo List
                     </Header>
                     <TodoList />
+                    
                   </Item>
-                  
+                  </Draggable>
+                  <Draggable>
                   <Item>
+                      
                     <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                       Weather
                     </Header>
                     <WeatherDisplay />
+                    
                   </Item>
-                  
-                  
+                  </Draggable>
                 </Grid>
-                </Draggable>
-                <Draggable>
+                
                 <Grid item xs = {calendarWidth}>
+                <Draggable>
                   <Item>
+                  
                   <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                     Calendar
                     </Header>
                     <CalendarWidget />
+                    
                    </Item>
+                   </Draggable>
+                   <Draggable>
+                   <Item>
+                   
+                    <iframe title="Hamster Pet" width="400" height="300" frameborder="0" src="https://cdn.abowman.com/widgets/hamster/hamster.html?"></iframe>
+                    
+                    </Item>
+                    </Draggable>
                 </Grid>
-                </Draggable>
                 
-                <Draggable> 
+                
                 <Grid item xs = {newsWidth}>
+                    <Draggable> 
                     <Item>
+                    
                         <Header as="h3" style={{ textAlign: "center", padding: 0 }}>
                             Top Headlines
                         </Header>
                         {articles.length > 0 && <ArticleList articles={articles.slice(0, DEFAULT_ARTICLE_NUM)} />}
                         {newsAPIError && <p>Could not fetch any articles. Please try again.</p>}
+                    
                     </Item>
+                    </Draggable>
+                    
                     {/*add button to "load more"*/}
                     
                     {/*<BasicList /> */}
                 </Grid>
-                </Draggable>
+                
                 {/* <BasicList /> */}
               </Grid>
             </Box>
